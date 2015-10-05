@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="月見バーガー価格変遷">
+  <link rel="alternate" type="application/rss+xml" href="rss.xml" />
+
+  <title>月見バーガー価格変遷</title>
+</head>
+<body>
+  <div class="contents">
+    <div id="chart_div" style="width: 1000px; height: 500px;"></div>
+    <div id="ref">
+      <h3>参考元</h3>
+      <p>
+        ・消費者物価指数 (4月) - <a href="http://ecodb.net/country/JP/imf_cpi.html">http://ecodb.net/country/JP/imf_cpi.html</a>
+      </p>
+      <p>
+        ・価格 - <a href="rss.xml">RSS に情報元を記載</a>
+      </p>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['年', '価格', '消費者物価指数 (4月)'],
+      ['2003年', 190, 100.70],
+      ['2004年', 199, 100.69],
+      ['2005年', 220, 100.41],
+      ['2006年', 240, 100.66],
+      ['2007年', 260, 100.72],
+      ['2008年', 270, 102.11],
+      ['2009年', 290, 100.74],
+      ['2010年', 290, 100.01],
+      ['2011年', 290, 99.72],
+      ['2012年', 320, 99.69],
+      ['2013年', 360, 100.04],
+      ['2014年', 339, 102.78],
+      ['2015年', 340, 103.82]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0,
+                       1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2,
+                       { calc: "stringify",
+                         sourceColumn: 2,
+                         type: "string",
+                         role: "annotation" }]);
+
+      var options = {
+        title: '月見バーガー価格変遷',
+        series: {
+          0: {targetAxisIndex: 0},
+          1: {targetAxisIndex: 1}
+        },
+        vAxes: {
+          0: {title: '価格'},
+          1: {title: '消費者物価指数 (4月)'}
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(view, options);
+
+    }
+    </script>
+</body>
+</html>

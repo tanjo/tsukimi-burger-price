@@ -10,6 +10,11 @@
     <description>月見バーガー価格変遷 の RSS です</description>
     <language>ja</language>
     <item>
+      <link>http://www.mcd-holdings.co.jp/news/2016/promotion/promo0825a.html</link>
+      <description>340 円</description>
+      <dc:date>2016-08-31</dc:date>
+    </item>
+    <item>
       <title>2015年度 月見バーガー価格</title>
       <link>http://www.mcd-holdings.co.jp/news/2015/promotion/promo0826a.html</link>
       <description>340 円</description>
@@ -60,7 +65,9 @@
     <item>
       <title>2007年度 月見バーガー価格</title>
       <link>http://www.mcd-holdings.co.jp/news/2007/promotion/promo0821.html</link>
-      <description>260 円 ※参考元 : http://gigazine.net/news/20070907_tsukimi_vs_tamateri/</description>
+      <description>260 円 
+        ※参考元 : http://gigazine.net/news/20070907_tsukimi_vs_tamateri/
+      </description>
       <dc:date>2007-09-07</dc:date>
     </item>
     <item>
@@ -74,7 +81,8 @@
       <link>http://tanjo.github.io/tsukimi-burger-price</link>
       <description>220 円
         ※日付参考元 : http://maedatosiie.jugem.cc/?eid=235
-        ※価格参考元 : https://goo.gl/L1dMiQ</description>
+        ※価格参考元 : https://goo.gl/L1dMiQ
+      </description>
       <dc:date>2005-09-02</dc:date>
     </item>
     <item>

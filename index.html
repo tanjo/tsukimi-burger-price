@@ -15,9 +15,6 @@
     <div id="ref">
       <h3>参考元</h3>
       <p>
-        ・消費者物価指数 (4月) - <a href="http://ecodb.net/country/JP/imf_cpi.html">http://ecodb.net/country/JP/imf_cpi.html</a>
-      </p>
-      <p>
         ・価格 - <a href="rss.xml">RSS に情報元を記載</a>
       </p>
     </div>
@@ -29,21 +26,22 @@
   function drawChart() {
 
     var data = google.visualization.arrayToDataTable([
-      ['年', '価格', '消費者物価指数 (4月)'],
-      ['2003年', 190, 100.70],
-      ['2004年', 199, 100.69],
-      ['2005年', 220, 100.41],
-      ['2006年', 240, 100.66],
-      ['2007年', 260, 100.72],
-      ['2008年', 270, 102.11],
-      ['2009年', 290, 100.74],
-      ['2010年', 290, 100.01],
-      ['2011年', 290, 99.72],
-      ['2012年', 320, 99.69],
-      ['2013年', 360, 100.04],
-      ['2014年', 339, 102.78],
-      ['2015年', 340, 103.82],
-      ['2016年', 340, 103.41]
+      ['年', '価格'],
+      ['2003年', 190],
+      ['2004年', 199],
+      ['2005年', 220],
+      ['2006年', 240],
+      ['2007年', 260],
+      ['2008年', 270],
+      ['2009年', 290],
+      ['2010年', 290],
+      ['2011年', 290],
+      ['2012年', 320],
+      ['2013年', 360],
+      ['2014年', 339],
+      ['2015年', 340],
+      ['2016年', 340],
+      ['2017年', 340]
       ]);
 
       var view = new google.visualization.DataView(data);
@@ -52,29 +50,20 @@
                        { calc: "stringify",
                          sourceColumn: 1,
                          type: "string",
-                         role: "annotation" },
-                       2,
-                       { calc: "stringify",
-                         sourceColumn: 2,
-                         type: "string",
-                         role: "annotation" }]);
+                         role: "annotation" }
+                       ]);
 
       var options = {
         title: '月見バーガー価格変遷',
         series: {
-          0: {targetAxisIndex: 0},
-          1: {targetAxisIndex: 1}
+          0: {targetAxisIndex: 0}
         },
         vAxes: {
-          0: {title: '価格'},
-          1: {title: '消費者物価指数 (4月)'}
+          0: {title: '価格'}
         }
       };
 
-      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-
-      chart.draw(view, options);
-
+      new google.visualization.LineChart(document.getElementById('chart_div')).draw(view, options);
     }
     </script>
 </body>

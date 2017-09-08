@@ -10,6 +10,13 @@
     <description>月見バーガー価格変遷 の RSS です</description>
     <language>ja</language>
     <item>
+      <title>2017年度 月見バーガー価格</title>
+      <link>http://www.mcd-holdings.co.jp/news/2017/promotion/promo0831a.html</link>
+      <description>340 円</description>
+      <dc:date>2017-08-31</dc:date>
+    </item>
+    <item>
+      <title>2016年度 月見バーガー価格</title>
       <link>http://www.mcd-holdings.co.jp/news/2016/promotion/promo0825a.html</link>
       <description>340 円</description>
       <dc:date>2016-08-31</dc:date>
@@ -65,7 +72,7 @@
     <item>
       <title>2007年度 月見バーガー価格</title>
       <link>http://www.mcd-holdings.co.jp/news/2007/promotion/promo0821.html</link>
-      <description>260 円 
+      <description>260 円
         ※参考元 : http://gigazine.net/news/20070907_tsukimi_vs_tamateri/
       </description>
       <dc:date>2007-09-07</dc:date>

@@ -20,7 +20,8 @@ function drawChart() {
       ['2017年', 340],
       ['2018年', 340],
       ['2019年', 340],
-      ['2020年', 340]
+      ['2020年', 340],
+      ['2021年', 340]
     ]);
   var view = new google.visualization.DataView(data);
   view.setColumns([0,

@@ -10,10 +10,16 @@
     <description>月見バーガー価格変遷 の RSS です</description>
     <language>ja</language>
     <item>
+      <title>2021年度 月見バーガー価格</title>
+      <link>https://www.mcdonalds.co.jp/campaign/tsukimi/</link>
+      <description>340 円</description>
+      <dc:date>2021-09-01</dc:date>
+    </item>
+    <item>
       <title>2020年度 月見バーガー価格</title>
       <link>https://www.mcdonalds.co.jp/company/news/2020/0826a/</link>
       <description>340 円</description>
-      <dc:date>2019-09-05</dc:date>
+      <dc:date>2020-09-05</dc:date>
     </item>
     <item>
       <title>2019年度 月見バーガー価格</title>
